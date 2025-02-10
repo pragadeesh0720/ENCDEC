@@ -12,16 +12,6 @@ Authenticated Encryption (AEAD) to prevent tampering
 Web UI with a Green theme
 
 
-🏗 Project Structure
-/dir
-│── /templates
-│ ├── index.html # Web UI
-│── encryption.py # Encryption logic
-│── app.py # Flask 
-│── static/style.css 
-│── requirements.txt # Dependencies
-│── README.md # Project documentation
-
 Install Dependencies
 pip install -r requirements.txt
 Run the Flask App
