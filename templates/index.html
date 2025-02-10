@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption & Decryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ENCDEC</h1>
+
+    <div class="container">
+        <textarea id="plaintext" placeholder="Enter text to encrypt..."></textarea>
+        <button onclick="encryptText()">Encrypt</button>
+        <p>Encrypted Text:</p>
+        <textarea id="ciphertext" readonly></textarea>
+
+        <button onclick="decryptText()">Decrypt</button>
+        <p>Decrypted Text:</p>
+        <textarea id="decrypted" readonly></textarea>
+    </div>
+
+    <script>
+        async function encryptText() {
+            let plaintext = document.getElementById("plaintext").value;
+            let response = await fetch("/encrypt", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ plaintext })
+            });
+            let data = await response.json();
+            document.getElementById("ciphertext").value = data.ciphertext || "Error!";
+        }
+
+        async function decryptText() {
+            let ciphertext = document.getElementById("ciphertext").value;
+            let response = await fetch("/decrypt", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ ciphertext })
+            });
+            let data = await response.json();
+            document.getElementById("decrypted").value = data.plaintext || "Error!";
+        }
+    </script>
+</body>
+</html>

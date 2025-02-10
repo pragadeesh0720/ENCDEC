@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: monospace;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    background-color: #111;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #009900;
+}
+
