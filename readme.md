@@ -32,6 +32,10 @@ Crypto.Cipher (AES-CBC)
 HTML/CSS
 Base64 Encoding
 
+🔳OUTPUT
+![Screenshot (502)](https://github.com/user-attachments/assets/fe64381f-767d-430f-b5bd-71c06dcc9f65)
+
+
 📝 Future Improvements
 ✅ File encryption support
 ✅ User authentication
