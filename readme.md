@@ -11,6 +11,7 @@ Flask API for encrypting & decrypting messages
 Authenticated Encryption (AEAD) to prevent tampering
 Web UI with a Green theme
 
+
 🏗 Project Structure
 /dir
 │── /templates
