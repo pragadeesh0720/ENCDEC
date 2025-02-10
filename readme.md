@@ -13,10 +13,10 @@ Web UI with a Green theme
 
 
 Install Dependencies
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 Run the Flask App
-python app.py
-Then open your browser and go to: http://127.0.0.1:5000/
+**python app.py**
+Then open your browser and go to:  **http://127.0.0.1:5000/**
 🔑 Usage
 🔹 Encrypt a Message
 Enter a plaintext message in the input field.
